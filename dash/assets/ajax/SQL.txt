@@ -1,0 +1,5 @@
+SELECT
+    educational_degrees.eid,educational_degrees.ename,educational_degrees.edept,certificates.cname
+FROM
+    `educational_degrees` 
+INNER JOIN `certificates`  ON educational_degrees.ecategory=certificates.cid
